@@ -1,2 +1,2 @@
 # hello-typescript
-typescript demo
+https://www.typescriptlang.org/docs/tutorial.html
