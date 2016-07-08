@@ -1,0 +1,26 @@
+$menuW:140px;
+.container{
+  position: relative;
+  height:100%;
+  .menu{
+    height:100%;
+    width:$menuW;
+    :global .ant-menu-item > a:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: transparent;
+      content: '';
+    }
+  }
+  .body{
+    position: absolute;
+    left:$menuW;
+    top:0;
+    right:0;
+    bottom:0;
+    overflow: auto;
+  }
+}

@@ -21,7 +21,7 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel'
         },{
-            test: /\.ts$/,
+            test: /\.tsx?$/,
             exclude: /node_modules/,
             loader: 'ts'
         }, {
@@ -58,7 +58,7 @@ module.exports = {
         require('autoprefixer')({browsers: ['last 2 versions']})
     ],
     resolve: {
-        extensions: ['', '.js', '.scss', '.css', '.jsx','.ts']
+        extensions: ['', '.js', '.scss', '.css', '.jsx','.ts','.tsx']
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
